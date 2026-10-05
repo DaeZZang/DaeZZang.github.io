@@ -1,0 +1,282 @@
+/* ========================================
+   Font
+======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* ========================================
+   Global
+======================================== */
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: white;
+  color: #222;
+}
+
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+
+a:hover,
+a:focus {
+  color: #f09228;
+  text-decoration: none;
+}
+
+
+strong {
+  font-weight: 700;
+}
+
+
+
+/* ========================================
+   Main Layout
+======================================== */
+
+.main-table {
+  width: 100%;
+  max-width: 800px;
+
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.section-table {
+  width: 100%;
+
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* ========================================
+   Introduction
+======================================== */
+
+.intro-text {
+  padding: 2.5%;
+
+  width: 63%;
+
+  vertical-align: middle;
+}
+
+
+.intro-photo {
+  padding: 2.5%;
+
+  width: 37%;
+  max-width: 37%;
+
+  vertical-align: middle;
+}
+
+
+.name {
+  margin: 0;
+  padding-top: 20px;
+
+  text-align: center;
+
+  font-size: 32px;
+  font-weight: 400;
+}
+
+
+.profile-photo {
+  width: 100%;
+  max-width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+
+.links {
+  text-align: center;
+}
+
+
+
+/* ========================================
+   Sections
+======================================== */
+
+.section-cell {
+  width: 100%;
+
+  padding: 16px;
+
+  vertical-align: middle;
+}
+
+
+h2 {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 400;
+}
+
+
+
+/* ========================================
+   Publications
+======================================== */
+
+.publication-table {
+  width: 100%;
+
+  border: 0;
+
+  border-spacing: 0 10px;
+  border-collapse: separate;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.paper-image-cell {
+  width: 25%;
+
+  padding: 16px;
+
+  vertical-align: middle;
+}
+
+
+.paper-image {
+  width: 160px;
+  height: 160px;
+
+  max-width: 100%;
+
+  object-fit: contain;
+}
+
+
+.paper-info {
+  width: 75%;
+
+  padding: 8px;
+
+  vertical-align: middle;
+}
+
+
+.paper-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.spotlight {
+  color: #ff5555;
+  font-weight: 700;
+}
+
+
+.highlight {
+  background-color: #ffffd0;
+}
+
+
+
+/* ========================================
+   Footer
+======================================== */
+
+.footer {
+  padding: 40px 16px 20px;
+
+  text-align: center;
+
+  color: #999;
+  font-size: 12px;
+}
+
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 650px) {
+
+  .intro-text,
+  .intro-photo {
+    display: block;
+
+    width: auto;
+    max-width: none;
+
+    padding: 16px;
+  }
+
+
+  .intro-photo {
+    text-align: center;
+  }
+
+
+  .profile-photo {
+    width: 180px;
+  }
+
+
+  .paper-image-cell {
+    width: 30%;
+    padding: 8px;
+  }
+
+
+  .paper-info {
+    width: 70%;
+    padding: 8px;
+  }
+
+
+  .paper-image {
+    width: 120px;
+    height: 120px;
+  }
+
+
+  .name {
+    font-size: 28px;
+  }
+
+}
